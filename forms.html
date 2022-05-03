@@ -14,25 +14,68 @@
     <form action="/tacos">
         <p>
             <label for="username">Enter username:</label>
-            <input type="text" placeholder="username" id="username">
+            <input type="text" placeholder="username" id="username" name="username">
         </p>
         <p>
             <label for="password">Enter password:</label>
-            <input type="password" placeholder="password" id="password">
+            <input type="password" placeholder="password" id="password" name="pasword">
         </p>
         <p>
             <label for="color">Pick color:</label>
-            <input type="color" id="color">
+            <input type="color" id="color" name="color">
         </p>
         <p>
             <label for="number">Pick number:</label>
-            <input type="number" placeholder="enter a number" id="number">
+            <input type="number" placeholder="enter a number" step="2" min="1" max="1000" id="number" name="number">
         </p>
         <p>
             <label for="cheese">Do you like cheese?</label>
-            <input type="checkbox" id="cheese">
+            <input type="checkbox" id="cheese" name="cheese">
         </p>
         <button>Submit</button>
+    </form>
+    <h2>Hijacking Searches</h2>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Seach Google</button>
+    </form>
+    <h3>Search YouTube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search YouTube</button>
+    </form>
+
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <button>Submit</button>
+        <p>
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="lg">LG</label>
+            <input type="radio" name="size" id="lg" value="lg">
+        </p>
+        <p>
+            <label for="meal">Please Slect an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="beef">Beef</option>
+                <option value="chicken" selected>Chicken</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" min="0" max="10" value="4" name="cheese_level" step="2" id="cheese">
+        </p>
+        <button>Submit</button>
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea placeholder="Type something special" name="requests" id="requests" cols="30" rows="10"></textarea>
+        </p>
     </form>
 
 </body>
