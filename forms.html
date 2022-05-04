@@ -76,6 +76,19 @@
             <br>
             <textarea placeholder="Type something special" name="requests" id="requests" cols="30" rows="10"></textarea>
         </p>
+
+        <h2>Validations Demo</h2>
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required minlength="5" maxlength="15">
+        </p>
+        <p>
+            <input type="email" required>
+            <input type="url">
+        </p>
+        <button>Submit</button>
     </form>
 
 </body>
