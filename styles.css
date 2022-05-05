@@ -3,6 +3,8 @@ h1 {
     font-weight: 400;
     text-decoration: #0f12ce underline;
     letter-spacing: 10px;
+    font-size: 80px;
+    font-family: serif;
 }
 
 p {
